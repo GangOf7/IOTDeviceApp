@@ -1,5 +1,5 @@
-                                                                               # IOTDeviceApp
-                                                                      +--------------------------------+
+# IOTDeviceApp
++--------------------------------+
 
 Kalypso is the core IoT device software running on Raspberry PI. It collects water parameters from different digital sensors. Can be deployed at remote locations.
 
