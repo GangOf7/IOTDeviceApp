@@ -70,7 +70,7 @@ public final class GPIO implements Singletons {
 	public double getWaterTemperature(){
 		_temperatureValueInCelc = Float.MIN_VALUE;
         for (TemperatureSensor device : w1Master.getDevices(TemperatureSensor.class)) {
-            //System.out.printf("%-20s %3.1f°C %3.1f°F\n", device.getName(), device.getTemperature(), device.getTemperature(TemperatureScale.CELSIUS));
+            //System.out.printf("%-20s %3.1fÂ°C %3.1fÂ°F\n", device.getName(), device.getTemperature(), device.getTemperature(TemperatureScale.CELSIUS));
             if(device.getName().contains(tmpSense_DS18B20)){
             	_temperatureValueInCelc = device.getTemperature(TemperatureScale.CELSIUS);
             	break;
@@ -151,41 +151,3 @@ public final class GPIO implements Singletons {
 
 }
 
-
-
-
-
-
-//public void readReturnRawTemperatureValue() {
-//try {
-//	// ready the input pin to listen up
-//	pin38.addListener(new GpioPinListenerDigital() {
-//		@Override
-//		public void handleGpioPinDigitalStateChangeEvent(GpioPinDigitalStateChangeEvent event) {
-//			System.out.println(" --> _Temperature_Probe_ GPIO PIN STATE CHANGED: " + event.getPin() + " = " + event.getState());
-//			_temperatureValueInCelc = event.getPin().
-//		}
-//
-//	});
-//
-//	pin16.toggle();
-//	System.out.println("--> GPIO MockProbe state ==> " + pin16.getState());
-//	Thread.sleep(5000);
-//	pin16.toggle();
-//	System.out.println("--> GPIO MockProbe state ==> " + pin16.getState());
-//	Thread.sleep(5000);
-//
-//	// stop all GPIO activity/threads by shutting down the GPIO controller
-//	// (this method will forcefully shutdown all GPIO monitoring threads and
-//	// scheduled tasks)
-//	gpio.shutdown();
-//	gpio.unprovisionPin(pin16);
-//	gpio.unprovisionPin(pin38);
-//} catch (Exception e) {
-//	System.err.println("Encountered problem in GPIO request: ");
-//	e.printStackTrace();
-//	_logger.log(Level.WARNING, "Encountered problem in GPIO request: Stack: " + e.toString());
-//} finally {
-//
-//}
-//}
