@@ -5,7 +5,7 @@
 
 # <img src="https://img.icons8.com/dotty/80/000000/relay-home-automation.png"/> Technology:-
 - Java 11
-- IoT Interface
+- IoT Interface GPIO
 - Maven
 - Pi4J ARM 32
 
@@ -30,13 +30,13 @@ It is reconfigurable at any time by its authorized host based on real life situa
   
   **2. Installion and Build Steps**
  
- - Clone this porject  ```git clone <repo> <directory>```
+ - Clone this project  ```git clone <repo> <directory>```
  - We start first with installing Eclipse and remote debugger in the local system to run and debug this java app (if required).
- - To Build this project we have to install Maven from here: https://docs.wso2.com/display/IS323/Installing+Apache+Maven+on+Windows for wndows system.
+ - To Build this project we have to install Maven from here: https://docs.wso2.com/display/IS323/Installing+Apache+Maven+on+Windows for windows system.
  - Download raspbian from here: https://www.raspberrypi.org/downloads/ and write it as boot drive in a micro SD card using any boot partition tool. 
  - Please follow the steps in Raspbian Install Prerequisites as mentioned above.
  - We also need to update Interfacing Options using  ```raspi-config```  as given above for communicating with digital sensors and also with the remote debugger.
- - Build this project in the local system using  ```mvn compile```  and place the final jar file (Kalypso.jar) into the Raspberyy pi local path. Or it can be downloaded from here: https://github.com/GangOf7/IOTDeviceApp/blob/master/Kalypso.jar
+ - Build this project in the local system using  ```mvn compile```  and place the final jar file (Kalypso.jar) into the Raspberry pi local path. Or it can be downloaded from here: https://github.com/GangOf7/IOTDeviceApp/blob/master/Kalypso.jar
  
  We can now connect the Raspberry PI using SSH (local connection), navigate to the desired directory and run the jar using  ``` java -jar Kalypso.jar ```  
  
