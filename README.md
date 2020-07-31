@@ -21,11 +21,11 @@ It is reconfigurable at any time by its authorized host based on real life situa
 
  **1. Raspbian Install Prerequisites**
  - Before installing anything, let us first update the Raspbian OS running on PI. Connect the USB internet card in any USB port. Plug Raspberry pi into local LAN and search assigned IP address using any ip scanner tool like Advance IP scanner. Follow below steps -
-
+```
     sudo raspi-config
     sudo apt-get update
     sudo apt-get upgrade
-  
+ ```
   
   **2. Installion and Build Steps**
  
@@ -34,10 +34,10 @@ It is reconfigurable at any time by its authorized host based on real life situa
  - To Build this project we have to install Maven from here: https://docs.wso2.com/display/IS323/Installing+Apache+Maven+on+Windows for wndows system.
  - Download raspbian from here: https://www.raspberrypi.org/downloads/ and write it as boot drive in a micro SD card using any boot partition tool. 
  - Please follow the steps in Raspbian Install Prerequisites as mentioned above.
- - We also need to update Interfacing Options using  raspi-config  as given above for communicating with digital sensors and also with the remote debugger.
- - Build this project in the local system using  mvn compile  and place the final jar file (Kalypso.jar) into the Raspberyy pi local path. Or it can be downloaded from here: https://github.com/GangOf7/IOTDeviceApp/blob/master/Kalypso.jar
+ - We also need to update Interfacing Options using  ```raspi-config```  as given above for communicating with digital sensors and also with the remote debugger.
+ - Build this project in the local system using  ```mvn compile```  and place the final jar file (Kalypso.jar) into the Raspberyy pi local path. Or it can be downloaded from here: https://github.com/GangOf7/IOTDeviceApp/blob/master/Kalypso.jar
  
- We can now connect the Raspberry PI using SSH (local connection), navigate to the desired directory and run the jar using   java -jar Kalypso.jar      
+ We can now connect the Raspberry PI using SSH (local connection), navigate to the desired directory and run the jar using  ``` java -jar Kalypso.jar ```  
  
  **3. Hardware**
  Raspberry PI 3b+, DS18B20, USB Internet Card
