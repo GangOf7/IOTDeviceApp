@@ -21,7 +21,8 @@ It is reconfigurable at any time by its authorized host based on real life situa
 # <img src="https://img.icons8.com/cotton/64/000000/installing-updates.png"/> Installion Steps:-
 
  **1. Raspbian Install Prerequisites**
- - Before installing anything, let us first update the Raspbian OS running on PI. Connect the USB internet card in any USB port. Plug Raspberry pi into local LAN and search assigned IP address using any ip scanner tool like Advance IP scanner. Follow below steps -
+ - Before installing anything, let us first update the Raspbian OS running on PI. Connect the USB internet card in any USB port. Plug Raspberry pi into local LAN and search assigned IP address using any ip scanner tool like Advance IP scanner. Use SSH on port 22 using PuTTY. 
+ Once logged into the PI, Follow below steps -
 ```
     sudo raspi-config
     sudo apt-get update
