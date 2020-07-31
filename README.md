@@ -9,7 +9,7 @@ Kalypso is the core IoT device software running on Raspberry PI. It collects amb
 - Pi4J ARM 32
 
 # <img src="https://img.icons8.com/cotton/64/000000/laptop-coding.png"/> Design IDE:-
-Eclipse 2020, Remote debugger, Putty SSH
+Eclipse 2020, Remote debugger, PuTTY SSH
 
 # <img src="https://img.icons8.com/nolan/96/futures.png"/> OverView:-
 Kalypso is designed for running device hardware 24x7 with moderate fault tolerance, collecting sensor data and managing communication resources with different micro services from remote locations.
@@ -29,7 +29,7 @@ It is reconfigurable at any time by its authorized host based on real life situa
   
   **2. Installion and Build Steps**
  
- - Clone this porject  git clone <repo> <directory>
+ - Clone this porject  ```git clone <repo> <directory>```
  - We start first with installing Eclipse and remote debugger in the local system to run and debug this java app (if required).
  - To Build this project we have to install Maven from here: https://docs.wso2.com/display/IS323/Installing+Apache+Maven+on+Windows for wndows system.
  - Download raspbian from here: https://www.raspberrypi.org/downloads/ and write it as boot drive in a micro SD card using any boot partition tool. 
